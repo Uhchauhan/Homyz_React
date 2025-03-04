@@ -1,38 +1,32 @@
 
-import React from "react";
-import Navbar from "./my-components/Navbar";
-import Header1 from "./my-components/Header1";
-import Counter from "./my-components/Counter";
-import Profilecard from "./my-components/Profilecard";
-import SkillsSection from "./my-components/SkillsSection";
-import OurProject from "./my-components/OurProject";
-import TestimonialSider from "./my-components/TestimonialSider";
-import Contact from "./my-components/Contact";
-import Footer from "./my-components/Footer";
-
-import "./App.css"
-
-
-
+import Companies from "./component/Companies/Companies";
+import Contact from "./component/Contact/Contact";
+import Footer from "./component/Footer/Footer";
+import GetStarted from "./component/GetStarted/GetStarted";
+import Header from "./component/Header/Header";
+import Hero from "./component/Hero/Hero";
+import Residencies from "./component/Residencies/Residencies";
+import Value from "./component/Value/Value";
+ 
+import "./index.css"
 
 function App() {
 
-    return(
+    return (
         <div className="App">
-            <Navbar />
-            <Header1 />
-            <Counter />
-            <Profilecard />
-            <SkillsSection />
-            <OurProject />
-            <TestimonialSider />
-            <Contact />
-            <Footer />  
+            <div>
+                <Header />
+                <Hero />
+                <Companies />
+                <Residencies />
+                <Value />
+                <Contact />
+                <GetStarted />
+                <Footer /> 
+            </div>
         </div>
-    );
+    )
 };
 
 
 export default App;
-
-

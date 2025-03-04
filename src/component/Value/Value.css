@@ -1,0 +1,189 @@
+ /* .v-container .image-container{
+    border: 8px solid rgba(232, 232, 232, 93%);
+}  */
+
+
+/* 
+.v-container>div{
+    flex: 1;
+} */
+/* 
+.v-right{
+    gap: 0.5rem;
+} */
+
+/* 
+.accordion{
+    margin-top: 2rem;
+    border: none;
+} */
+
+
+
+/* 
+.accordionItem{
+    background: white;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+} */
+
+
+
+/* 
+.accordionItem.expanded{
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+} */
+
+
+/* 
+.accordionButton{
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+} */
+
+
+
+/* 
+.icon{
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px;
+} */
+
+
+/* 
+.icon svg{
+    fill: var(--blue);
+} */
+
+
+/* 
+.accordionButton .primaryText{
+    font-size: 1.1rem;
+}
+*/
+
+
+
+
+
+ .v-wrapper {
+    width: 100%;
+    padding: 40px 0;
+  }
+  
+  .v-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .v-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+ 
+  .image-container {
+    border: 8px solid rgba(232, 232, 232, 0.93);
+    overflow: hidden;
+    width: 100%;
+    max-width: 450px;
+  } 
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .v-right {
+    flex: 1;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .accordion {
+    margin-top: 2rem;
+    border: none;
+    width: 100%;
+  }
+  
+  .accordionItem {
+    background: white;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .accordionItem.expanded {
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+  }
+  
+  .accordionButton {
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon {
+    padding: 8px;
+    background: #eeeeff;
+    border-radius: 5px;
+  }
+  
+  .icon svg {
+    fill: var(--blue);
+  }
+  
+  .accordionButton .primaryText {
+    font-size: 1.1rem;
+  }
+  
+
+
+  @media (max-width: 1024px) {
+    .v-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .v-right {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .accordion {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .image-container {
+      max-width: 90%;
+      height: 100%;
+    }
+  
+    .accordionButton .primaryText {
+      font-size: 1rem;
+    }
+  }
+   
